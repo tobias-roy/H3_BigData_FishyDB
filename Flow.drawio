@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" modified="2023-12-20T08:29:10.815Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="GvgKs_hKHl6RL-rImyqQ" version="22.1.11" type="github">
+  <diagram name="Page-1" id="1cC6SvfyRu7Zao3Ypavw">
+    <mxGraphModel dx="1080" dy="687" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tpdR4pekpKH0ab_MHRUy-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tpdR4pekpKH0ab_MHRUy-1" target="tpdR4pekpKH0ab_MHRUy-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tpdR4pekpKH0ab_MHRUy-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Polygon API&lt;/font&gt;&lt;/b&gt;&lt;br&gt;- Levere real-time aktiemarkedes data" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry y="240" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="tpdR4pekpKH0ab_MHRUy-6" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="240" y="240" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="tpdR4pekpKH0ab_MHRUy-3" value="&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;MongoDB Atlas&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- Opbevare rå data fra API&#39;et&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="tpdR4pekpKH0ab_MHRUy-6">
+          <mxGeometry width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="tpdR4pekpKH0ab_MHRUy-5" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;LAKE&lt;/font&gt;&lt;/b&gt;" style="shape=tape;whiteSpace=wrap;html=1;fillColor=#3c85ec;strokeColor=#6c8ebf;" vertex="1" parent="tpdR4pekpKH0ab_MHRUy-6">
+          <mxGeometry x="22.5" y="90" width="125" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tpdR4pekpKH0ab_MHRUy-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="tpdR4pekpKH0ab_MHRUy-9" target="tpdR4pekpKH0ab_MHRUy-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tpdR4pekpKH0ab_MHRUy-9" value="&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;Airbyte&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- Overføre data fra API til MongoDB i rå format&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="110" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tpdR4pekpKH0ab_MHRUy-13" value="&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;Airbyte&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- Overføre data fra MongoDB til Supabase Postgres DB&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="110" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tpdR4pekpKH0ab_MHRUy-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tpdR4pekpKH0ab_MHRUy-3" target="tpdR4pekpKH0ab_MHRUy-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tpdR4pekpKH0ab_MHRUy-15" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="510" y="270" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="tpdR4pekpKH0ab_MHRUy-16" value="&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;Supabase Postgres&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- Opbevare transformeret data MongoDB i korrekt brugbart format&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="tpdR4pekpKH0ab_MHRUy-15">
+          <mxGeometry width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="tpdR4pekpKH0ab_MHRUy-18" value="&lt;p style=&quot;line-height: 0%;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 0%;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 0%;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Warehouse&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.extract_or_measurement;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="520" y="210" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tpdR4pekpKH0ab_MHRUy-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="tpdR4pekpKH0ab_MHRUy-13" target="tpdR4pekpKH0ab_MHRUy-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tpdR4pekpKH0ab_MHRUy-20" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="790" y="240" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="tpdR4pekpKH0ab_MHRUy-21" value="&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;Metabase&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- Data visualiserings værktøj&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="tpdR4pekpKH0ab_MHRUy-20">
+          <mxGeometry width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="tpdR4pekpKH0ab_MHRUy-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.012;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="tpdR4pekpKH0ab_MHRUy-16" target="tpdR4pekpKH0ab_MHRUy-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
